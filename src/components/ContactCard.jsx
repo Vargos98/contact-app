@@ -1,6 +1,7 @@
 import React from "react";
 import user from "../images/user.png";
 
+
 const ContactCard = (props) => {
   const { id, name, email } = props.contact;
   return (
@@ -15,6 +16,8 @@ const ContactCard = (props) => {
         style={{ color: "red", marginTop: "7px" }}
         onClick={() => props.clickHander(id)}
       ></i>
+    
+     
     </div>
   );
 };
